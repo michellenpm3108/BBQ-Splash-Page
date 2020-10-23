@@ -1,8 +1,56 @@
+:root {
+    --orange: #f18119;
+    --black: #404040;
+    --white: #fff;
+    --gradient: #ff713b - #ffa51d; 
+}
 body {
     margin: 0;
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: var(--black);
 }
 
+/* TYPOGRAPHY */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: var(--white);
+    width: 60%;
+}
+strong{
+    font-weight: 700;
+}
+h1 + p {
+    font-weight: 900;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+.top-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: var(--orange);
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 1.3125rem;
+    margin-bottom: 0;
+}
+h2 + p {
+    margin: 0 0 2em;
+    font-weight: 900;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* LAYOUT */
 .container {
     display: flex;
     flex-direction: column;
@@ -12,11 +60,30 @@ body {
     .container {
         flex-direction: row;
     }
-    .background-image {
+    .intro {
         width: 60%;
     }
-    .register-form {
+    .main-content{
         width: 35%;
     }
-    
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center ;
+
+}
+.top-text {
+    order: -1;
+    border-top: 7px solid var(--orange);
+    padding: .5em 0;
+    width: 190px;
+}
+
+.main-content {
+    padding: 1em 3em;
 }

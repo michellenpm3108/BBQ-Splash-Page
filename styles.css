@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+    .background-image {
+        width: 60%;
+    }
+    .register-form {
+        width: 35%;
+    }
+    
+}

@@ -1,6 +1,15 @@
+:root {
+    --orange: #f18119;
+    --black: #404040;
+    --white: #fff;
+    --gradient: #ff713b - #ffa51d; 
+}
 body {
     margin: 0;
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: var(--black);
 }
 
 .container {
@@ -12,11 +21,43 @@ body {
     .container {
         flex-direction: row;
     }
-    .background-image {
+    .intro {
         width: 60%;
     }
-    .register-form {
+    .main-content{
         width: 35%;
     }
-    
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+strong{
+    font-weight: 700;
+}
+h1 + p {
+    font-weight: 900;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+.top-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: var(--orange);
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 1.3125rem;
+}
+h2 + p {
+    font-weight: 900;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
 }

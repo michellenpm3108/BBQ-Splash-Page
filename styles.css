@@ -4,6 +4,9 @@
     --white: #fff;
     --gradient: #ff713b - #ffa51d; 
 }
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     text-align: center;
@@ -17,7 +20,7 @@ h1 {
     font-size: 2.25rem;
     font-weight: 300;
     color: var(--white);
-    margin: 0;
+    margin: 1em 0;
 }
 strong{
     font-weight: 700;
@@ -26,7 +29,7 @@ h1 + p {
     font-weight: 900;
     color: var(--orange);
     text-transform: uppercase;
-    margin: 0 0 1em;
+    margin: 0;
 }
 .top-text {
     text-transform: uppercase;
@@ -90,6 +93,10 @@ h2 + p {
     }
     .main-content{
         width: 35%;
+    }
+    .intro,
+    .main-content {
+        min-height: 100vh;
     }
     body {
         font-size: 1.125rem;

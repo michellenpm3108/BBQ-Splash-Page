@@ -16,11 +16,15 @@ body {
 }
 
 /* TYPOGRAPHY */
+h1, h2~p {
+    max-width: 300px;
+    margin: auto;
+}
 h1 {
     font-size: 2.25rem;
     font-weight: 300;
     color: var(--white);
-    margin: 1em 0;
+    margin: 0;
 }
 strong{
     font-weight: 700;
@@ -58,18 +62,19 @@ h2 + p {
 .container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .intro{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--black);
     background-image: url(../images/dark-ribs.jpg);
     background-size: cover;
     background-position: center ;
     padding: 0 .5em 2em;
+    min-height: 50vh;
 }
 .top-text {
     order: -1;
@@ -80,6 +85,7 @@ h2 + p {
 
 .main-content {
     padding: 2em 1em;
+    margin: auto;
 }
 
 
@@ -95,11 +101,15 @@ h2 + p {
         width: 35%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
     .intro,
     .main-content {
         min-height: 100vh;
+    }
+    h1, h2~p {
+        max-width: 450px;
     }
     body {
         font-size: 1.125rem;

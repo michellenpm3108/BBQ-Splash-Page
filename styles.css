@@ -85,6 +85,7 @@ h2 + p {
 
 .main-content {
     padding: 2em 1em;
+    margin: auto;
 }
 
 
@@ -109,7 +110,6 @@ h2 + p {
     }
     h1, h2~p {
         max-width: 450px;
-        background-color: yellow;
     }
     body {
         font-size: 1.125rem;

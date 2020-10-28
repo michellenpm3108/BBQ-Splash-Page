@@ -19,3 +19,5 @@ SOLUTION:
 6/ separate the content in the intro part:
 - top word sucks to the top, bottom words suck to the bottom (justify-content: space-between)
 - prevent words sticking together (min-height: 50vh, set margin for the center word -h1 )
+
+7/ prevent the words getting too long in big screen  (SOLUTION: max-width: 400px) 

@@ -18,7 +18,8 @@ body {
 /* =================
    TYPOGRAPHY
    ================= */
-h1, h2~p {
+.intro >*,
+.main-content >* {
     max-width: 300px;
     margin: auto;
 }
@@ -98,15 +99,24 @@ h2 + p {
 /* =================
    FORM
    ================= */
+
+.email-collector {
+    width: 80%;
+    max-width: 250px;
+    border: 3px solid orange;
+    margin: auto;
+}
+input, 
+button {
+    width: 100%;
+}
 input {
     margin-bottom: .75em;
     padding: .4em 0;
     text-align: center;
-    width: 300px;
 }
 
 button {
-    width: 300px;
     padding: 1em 3em;
     background: #f18119;
     color: white;
@@ -144,7 +154,8 @@ button:hover {
     .main-content {
         min-height: 100vh;
     }
-    h1, h2~p {
+    .intro >*,
+    .main-content>* {
         max-width: 450px;
     }
     body {

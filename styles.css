@@ -116,22 +116,32 @@ input {
     padding: .4em 0;
     text-align: inherit;
     font-family: inherit;
+    transform: scale(1);
+    transition: .5s;
+}
+input:focus {
+    transform: scale(1.03);
 }
 
-button {
+.btn {
     padding: 1em 3em;
-    background: #f18119;
-    color: white;
+    border: 0;
     text-transform: uppercase;
     font-size: 0.625rem;
     letter-spacing: 3px;
     font-weight: 700;
     cursor: pointer;
 }
-
-button:hover {
-    background: #404040;
+.btn-primary {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
     color: white;
+    transform: scale(1)
+    transition:  .5s;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.03);
+    background: #404040;
 }
 /* =================
    MEDIA QUERIES

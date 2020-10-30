@@ -118,20 +118,22 @@ input {
     font-family: inherit;
 }
 
-button {
+.btn {
     padding: 1em 3em;
-    background: #f18119;
-    color: white;
+    border: 0;
     text-transform: uppercase;
     font-size: 0.625rem;
     letter-spacing: 3px;
     font-weight: 700;
     cursor: pointer;
 }
-
-button:hover {
-    background: #404040;
+.btn-primary {
+    background: linear-gradient(to left, #ff713b, #ffa51d);
     color: white;
+    transition:  .5s;
+}
+.btn-primary:hover {
+    background: #404040;
 }
 /* =================
    MEDIA QUERIES

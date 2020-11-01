@@ -44,7 +44,6 @@ h1 + p {
     font-size: 0.625rem;
     color: var(--orange);
     letter-spacing: 2px;
-    margin: 0;
 }
 h2 {
     font-size: 1.3125rem;
@@ -86,9 +85,10 @@ h2 + p {
 }
 .top-text {
     order: -1;
-    border-top: 7px solid var(--orange);
+    border-top: 5px solid var(--orange);
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
     padding: .5em 0;
-    width: 190px;
+    margin: 0;
 }
 
 .main-content {

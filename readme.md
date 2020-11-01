@@ -1,9 +1,10 @@
-some hints to build this:
+**** some hints to build this ***
 
 1/ background image: 
  - create a fallback in case the background image loading is too slow and doesn't appear (SOLUTION: background-color)
  - let the image covers whole background (SOLUTION: background-size)
  - choose the center part of the photo to be shown (SOLUTION: background-position) 
+ - blend the background image with the blackground-color to let the wordings on it more appealing (SOLUTION: background-blend-mode)
 
 2/ text's order: write the text in a logic order, change its order if the design requires (SOLUTION: set display flex for the parent element and set new order for the child element)
 
@@ -21,3 +22,10 @@ SOLUTION:
 - prevent words sticking together (min-height: 50vh, set margin for the center word -h1 )
 
 7/ prevent the words getting too long in big screen  (SOLUTION: max-width: 400px) 
+
+8/ FORM:
+- scale the button to become a bit bigger in hover and focus status (SOLUTION: transform: scale(1.2) )
+- make the transition smoother (SOLUTION: transition: .5s)
+- button has gradient (SOLUTION: background-image: linear-gradient(to left, red, blue))
+
+9/ decorate the border top of the text top: make it gradient (SOLUTION: border-image, border-image-slice)

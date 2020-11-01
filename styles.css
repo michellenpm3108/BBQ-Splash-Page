@@ -76,8 +76,9 @@ h2 + p {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--black);
     background-image: url(../images/dark-ribs.jpg);
+    background-color: var(--grey);
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center ;
     padding: 0 .5em 2em;

@@ -136,8 +136,8 @@ input:focus {
 .btn-primary {
     background: linear-gradient(to left, #ff713b, #ffa51d);
     color: white;
-    transform: scale(1)
-    transition:  .5s;
+    transform: scale(1);
+    transition: .5s;
 }
 .btn-primary:hover,
 .btn-primary:focus {
